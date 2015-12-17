@@ -35,7 +35,7 @@ public class FragmentDrawer extends Fragment {
     private NavigationDrawerAdapter adapter;
     private View containerView;
     private FragmentDrawerListener drawerListener;
-
+//change
     public FragmentDrawer() {
 
     }
