@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import ncell.appcamp.telemedic.R;
 import ncell.appcamp.telemedic.activity.HTTPConnection;
+import ncell.appcamp.telemedic.activity.doctor.ListPatient;
 
 
 public class PatientRegistration extends Activity {
@@ -108,9 +109,9 @@ public class PatientRegistration extends Activity {
 						String data = jobj.getString("msg");
 						
 						Intent login = new Intent(getApplicationContext(),
-								PatientActivity.class);
-							login.putExtra("json", data.toString());
-							login.putExtra("button", "Enter lab Details");
+								ListPatient.class);
+						//	login.putExtra("patient", data.toString());
+						//	login.putExtra("button", "Enter lab Details");
 						startActivity(login);
 						
 						
