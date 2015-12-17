@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="capture"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#218eed"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/background" />
+
+    <Button
+        android:id="@+id/sendpic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="send"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#218eed"
+        android:textColor="@android:color/white"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <Button
+        android:id="@+id/dregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#218eef"
+        android:textColor="@android:color/white"
+        android:text="Register"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/dList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#218eef"
+        android:textColor="@android:color/white"
+        android:text="Doctors List" />
+
+
+</LinearLayout>

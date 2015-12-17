@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ncell.appcamp.telemedic">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name="ncell.appcamp.telemedic.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ncell.appcamp.telemedic.register.RegisterNewUserActivity"></activity>
+        <activity android:name=".activity.doctor.DoctorActivity" ></activity>
+        <activity android:name=".activity.Dashboard" ></activity>
+        <activity android:name=".activity.patient.PatientActivity" ></activity>
+        <activity android:name=".activity.patient.PatientRegistration" ></activity>
+        <activity android:name=".activity.patient.PatientRecord" ></activity>
+        <activity android:name=".activity.doctor.DoctorRecord" ></activity>
+        <activity android:name=".activity.doctor.ListPatient"></activity>
+        <activity android:name=".activity.doctor.ViewPatient"></activity>
+        <activity android:name=".activity.ImageCaptureActivity"></activity>
+        <activity android:name=".activity.doctor.DoctorsList"/>
+        <activity android:name=".activity.doctor.DoctorDetailInfo"/>
+        <activity android:name=".activity.patient.PatientTestCheckedItems"/>
+        <activity android:name=".activity.patient.PatientSelectedCheckups"/>
+        <activity android:name=".activity.patient.NewRecordEntry"></activity>
+        <activity android:name=".activity.patient.PatientReport"></activity>
+        <activity android:name=".activity.patient.ViewLabTests"></activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Patient Record Ward"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/pregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Register"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/plist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Patient List"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/new_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Enter patient username"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/pnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Enter the new record"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

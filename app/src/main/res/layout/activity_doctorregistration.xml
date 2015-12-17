@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="#23355b"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/d_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="text" />
+
+            </LinearLayout>
+            
+            
+            <RadioGroup
+                android:id="@+id/d_sex"
+        		android:layout_marginTop="30dp"
+        		android:layout_width="match_parent"
+       			 android:layout_height="wrap_content" 
+        		android:orientation="horizontal"
+        		android:layout_gravity="center_horizontal">
+
+        			<RadioButton
+            			android:id="@+id/d_male"
+            			android:checked="true"
+            			style="@style/MyMaterialTheme"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:layout_weight="1"
+            			android:text="male"
+            			android:textColor="#000000" />
+
+        			<RadioButton
+            			android:id="@+id/d_female"
+            			style="@style/MyMaterialTheme"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:layout_weight="1"
+            			android:text="female"
+            			android:textColor="#000000"  />
+
+       
+    		</RadioGroup>
+            
+            
+                
+            
+            
+
+            <EditText
+                android:id="@+id/d_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="username"
+                android:inputType="text"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:focusable="true"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:focusable="true"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_retypepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:focusable="true"
+                android:hint="retypepassword"
+                android:inputType="textPassword"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_cell_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="cell_no"
+                android:inputType="phone"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_home_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="home_no"
+                android:inputType="phone"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="address"
+                android:inputType="text"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="Speciality"
+                android:inputType="text"
+                android:textColorHighlight="#0000ff" />
+
+            <EditText
+                android:id="@+id/d_tele_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:focusable="true"
+                android:hint="Tele Location"
+                android:inputType="text"
+                android:textColorHighlight="#0000ff" >
+
+                <requestFocus />
+            </EditText>
+            
+            <Button
+                android:id="@+id/d_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Register" 
+                android:layout_marginTop="30dp"
+                android:background="#218eed"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        
+        
+    </ScrollView>
+
+
+
+</LinearLayout>
