@@ -157,7 +157,7 @@ public class DoctorActivity extends AppCompatActivity implements FragmentDrawerD
 				fragment = new Fragment();
 				title = "Patient List";
 				Intent p = new Intent(getApplicationContext(),
-							ListPatient.class);
+							ViewPatient.class);
 					p.putExtra("id", d.id.toString());
 					startActivity(p);
 				break;
