@@ -32,4 +32,14 @@
     <string name="patient">Patient</string>
     <string name="teleuser">Vendor</string>
     <string name="doctor">Doctor</string>
+
+    <string name="nav_item_patient">Patient List</string>
+    <string name="nav_item_doctor_info">Detail</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels1">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_patient</item>
+        <item>@string/nav_item_doctor_info</item>
+    </string-array>
 </resources>
