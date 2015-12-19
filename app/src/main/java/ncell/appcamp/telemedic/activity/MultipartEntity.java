@@ -90,7 +90,7 @@ public class MultipartEntity implements HttpEntity {
         }
     }
 
-    public void addPart(final String key, final File value) {
+    public void addPart(String fileToUpload, final String key, final File value) {
         try {
             addPart(key, value.getName(), new FileInputStream(value));
         } catch (final FileNotFoundException e) {
