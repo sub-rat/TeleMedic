@@ -176,6 +176,7 @@ public class NewRecordEntry extends Activity implements View.OnClickListener {
                 HttpPost httppost = new HttpPost("http://www.subratgyawali.com.np/api/?action=uploadpdf&id="+p.getId()); // server
                 MultipartEntity reqEntity = new MultipartEntity();
                 reqEntity.addPart("fileToUpload", System.currentTimeMillis() + ".pdf",pdf);
+                //reqEntity.addPart("fileToUpload");
                 reqEntity.addPart("submit","true");
                 httppost.setEntity(reqEntity);
 
